@@ -2,8 +2,8 @@ fr:
   activerecord:
     models:
       adherent:
-        one: Adhérent
-        other: Adhérents
+        one: Adhérent·e
+        other: Adhérent·e·s
     attributes:
       adherent:
         title:          Le nom
@@ -22,5 +22,5 @@ fr:
         adherent_category_id:  Catégorie
     submit:
       adherent:
-        create: "Créer l'adhérent"
-        update: "Mettre à jour l'adhérent"
+        create: "Créer l'adhérent·e"
+        update: "Mettre à jour l'adhérent·e"
