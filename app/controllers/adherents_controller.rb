@@ -14,6 +14,6 @@ class AdherentsController < ApplicationController
     @breadcrumbs = []
     @breadcrumbs << [ "Accueil",    root_path ]
     @breadcrumbs << [ parent_page.title,    main_page_path(parent_page) ] if parent_page.present?
-    @breadcrumbs << [ "Adhérents",      adherents_path ]
+    @breadcrumbs << [ "Adhérent·e·s",      adherents_path ]
   end
 end

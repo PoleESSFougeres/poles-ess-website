@@ -1,7 +1,7 @@
 = render layout: 'admin/adherents/layout_index' do
 
   = link_to "Créer une catégorie", new_admin_adherent_category_path, class:'btn btn-primary float-right'
-  h2.mb-5 Catégories d'adhérent
+  h2.mb-5 Catégories d'adhérent·e·s
 
   .cadre-table
     table.table.table-striped.table-hover.table-sm
@@ -10,7 +10,7 @@
           th Position
           th Date de création
           th Titre
-          th.text-center Adhérents
+          th.text-center Adhérent·e·s
 
           th
       tbody
@@ -43,4 +43,4 @@
             td colspan="7"
               p.mt-3.text-center: em.text-muted Aucune catégorie
 
-  / = paginate @adherent_categories  
+  / = paginate @adherent_categories

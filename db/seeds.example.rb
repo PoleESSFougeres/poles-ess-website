@@ -83,7 +83,7 @@ end
   { title: 'Le pôle', baseline: 'Une structure au service du territoire', position: 1, child_pages: [
     { key: nil, title: 'Missions', enabled: true, position: 1 },
     { key: 'staff_member', title: 'Equipe', enabled: true, position: 2 },
-    { key: 'adherent', title: 'Adhérents', enabled: true, position: 3 },
+    { key: 'adherent', title: 'Adhérent·e·s', enabled: true, position: 3 },
     { key: 'partner', title: 'Partenaires', enabled: true, position: 4 },
     { key: 'membership', title: 'Adhérer au pôle', enabled: true, position: 5 },
   ] },
@@ -147,7 +147,7 @@ end
       { title: "Présentation", url: "#", position: 1 },
       { title: "Missions", url: "#", position: 2 },
       { title: "Equipe", url: staff_members_path, position: 3 },
-      { title: "Adhérents", url: adherents_path, position: 4 },
+      { title: "Adhérent·e·s", url: adherents_path, position: 4 },
       { title: "Partenaires", url: partners_path, position: 5 }
     ] },
     { title: "Agir avec le pôle", position: 2, menu_items: [
