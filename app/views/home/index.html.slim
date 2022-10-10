@@ -33,7 +33,8 @@
 .flex.flex-col.md:flex-row.mx-auto.mb-3
   = render 'highlighted_feature_block'
 
-  .home-cta.w-full.md:w-1/2.text-center.bg-c-gray-100.py-12.pl-6.md:ml-3
+  .home-cta.w-full.md:w-1/2.text-center.bg-c-gray-100.py-12.pl-6.md:ml-3.relative
+    = render 'layouts/bg-pic', filename: 'pic-home-01', css_class: 'pic-home-02'
     .md:w-3/5.mr-auto
       p.text-2xl.uppercase.mb-3 Vous souhaitez participer à la dynamique de l'ESS sur votre territoire ?
       = image_pack_tag "picto/Picto-adhesion.svg", class: "w-20 mb-6 mx-auto"
