@@ -33,13 +33,13 @@ html lang='fr'
             = active_link_to main_page_path(@membership_page), active: :inclusive, class: "picto-link px-2" do
               = image_pack_tag "picto/Picto-adhesion.svg", class: "w-10 mb-2"
               ' Adhésion
+            - if Setting.highlighted_feature.present?
+              = active_link_to highlighted_feature_path, active: :inclusive, class: "picto-link px-2" do
+                = image_pack_tag highlighted_feature_icon, class: "w-10 mb-2"
+                = highlighted_feature_title
             = active_link_to main_page_path(@ess_map_page), active: :inclusive, class: "picto-link px-2" do
               = image_pack_tag "picto/Picto-carto.svg", class: "w-10 mb-2"
               ' Cartographie
-            - if Setting.highlighted_feature.present?
-              = active_link_to highlighted_feature_path, active: :inclusive, class: "picto-link picto-link--highlighted px-2" do
-                = image_pack_tag highlighted_feature_icon, class: "w-10 mb-2"
-                = highlighted_feature_title
             = active_link_to basic_page_path(@contact_page), active: :inclusive, class: "picto-link pl-2" do
               = image_pack_tag "picto/Picto-contact.svg", class: "w-10 mb-2"
               ' Contact

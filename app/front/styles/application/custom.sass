@@ -2,23 +2,23 @@
 
 .home-bg
   background-image: url("../images/home-bg.png")
-// .pic-home-01
-
+.pic-home-01
+  height: 100%
+  background-size: 400px
+  background-position: -0% 0%
+  top: 0px
+.pic-home-02
+  right: 0
+  left: auto
 
 // .pic-bottom
-
-
 .bg-primary-bis
   background-image: url("../images/bg-primary-bis.png")
-  // background-color: var(--color-primary)
+  background-color: var(--color-secondary)
+  background-blend-mode: multiply
+  opacity: 0.8
 
 .footer-bottom
-  // // vallons
-  // background-color: var(--color-tercery)
-  // @apply text-white
-  // .emphasis
-  //   @apply text-primary
-  // broceliande
   @apply bg-primary
   @apply text-gray-200
   .emphasis
@@ -29,7 +29,14 @@
 .title-2 + .text-primary
   @apply text-secondary
 
+#query
+  @apply bg-primary-light
 #query::placeholder
   color: #fff
   opacity: 1
 
+.home-baseline
+  background-color: rgba(var(--color-secondary-rgb), 0.9)
+
+.home-cta
+  @apply text-secondary
