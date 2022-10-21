@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: /
 
-Sitemap: pole-ess-staging.osc-fr1.scalingo.io/sitemap.xml
+Sitemap: contact@ecosolidaires.org/sitemap.xml
