@@ -94,10 +94,8 @@ end
     { key: nil, title: 'Se former', enabled: true, position: 6 },
   ] },
   { title: "L'ESS", baseline: "Un modèle économique et social où l’humain est au cœur des relations induites", position: 2, child_pages: [
-    { key: 'ess_map', title: 'Carte des adhérents', enabled: true, position: 1 },
-    { key: nil, title: "Les chiffres de l’ESS en pays de Fougères", enabled: true, position: 2 },
-    { key: nil, title: "Les chiffres de l’ESS en Bretagne", enabled: true, position: 3 },
-    { key: nil, title: "Les chiffres de l’ESS en France", enabled: true, position: 4 },
+    { key: 'key_number', title: 'Chiffres-clés', enabled: true, position: 1 },
+    { key: 'ess_map', title: 'Carte des adhérents', enabled: true, position: 2 },
   ] },
 ].each do |option|
   main_page = MainPage.where(title: option[:title]).first_or_create(

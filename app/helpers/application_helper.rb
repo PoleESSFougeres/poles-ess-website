@@ -39,7 +39,7 @@ module ApplicationHelper
   end
 
   def safe_l(date, hash = {})
-    date && !date.blank? ? I18n.l(date, hash) : nil
+    date && !date.blank? ? I18n.l(date, **hash) : nil
   end
 
   def number_to_euro(amount)
